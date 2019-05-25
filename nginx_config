@@ -24,6 +24,7 @@ server {
 	location ~ ^/uploads/ {
 		root  /home/ian/hw6/ask_kochnov/;
 	}
+	#без этого стили джанги пытаются грузиться со /static/static/
 	location ^~/static/ {
 		alias /home/ian/hw6/ask_kochnov/static/;
 	}
