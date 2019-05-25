@@ -1,0 +1,49 @@
+div {
+    word-wrap: break-word;
+}
+.pages_numb_buttons{
+    width: 25px;
+    height: 25px;
+    border-color: #000;
+    border: 1px solid #777;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+.vote_block {
+    width: 40px;
+    height: 40px;
+    color:#999;
+}
+.vote_rating {
+    height: 100%;
+    width: 40%;
+    text-align: center;
+    padding: 10% 10%;
+}
+.vote_buttons {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    top: -100%;
+    left: 47%;
+}
+.vote_button {
+    width: 100%;
+    height: 35%;
+    display:block;
+    margin: 2px 0px;
+    padding:3px;
+}
+
+.vote_button:hover{
+    background: #eee;
+}
+
+.vote_button:active{
+    background: #ddd;
+}
+
+input::placeholder {
+    margin-top: 0px;
+}
