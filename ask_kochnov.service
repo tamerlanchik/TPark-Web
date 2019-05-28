@@ -10,7 +10,7 @@ Group = www-data
 WorkingDirectory = /home/ian/hw6/ask_kochnov
 ExecStartPre = /bin/mkdir -p /run/ask_kochnov
 ExecStartPre = /bin/chown -R www-data:www-data /run/ask_kochnov
-ExecStart = /home/ian/askme/tp-ask/bin/gunicorn --bind 0.0.0.0:8001 --bind 0.0.0.0:8002 --workers=2 --pid /run/ask_kochnov/ask_kochnov.pid ask_kochnov.wsgi
+ExecStart = /home/ian/askme/tp-ask/bin/gunicorn -c /home/ian/hw6/ask_kochnov/gunicorn.config.py --pid /run/ask_kochnov/ask_kochnov.pid ask_kochnov.wsgi
 ExecReload = /bin/kill -s HUP $MAINPID
 ExecStop = /bin/kill -s TERM $MAINPID
 ExecStopPost = /bin/rm -rf /run/ask_kochnov
